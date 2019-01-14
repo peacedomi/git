@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="https://cdn.staticfile.org/jquery/2.0.0/jquery.min.js">
+</script>
+</head>
+<body>
+<div  id='iframe1' style="border:1px solid red;width:300px;height:300px" >
+</div>
+<div id='iframe2' style="border:1px solid red;width:300px;height:300px"  >
+	
+</div>
+<div id='iframe3' style="border:1px solid red;width:300px;height:300px"  >
+	
+</div>
+<div id='iframe4' style="border:1px solid red;width:300px;height:300px" >
+	
+</div>
+</body>
+<script type="text/javascript">
+
+	var interval;
+	clearInterval(interval)
+
+	interval = setInterval(function(){
+		$('#iframe1').load('https://www.baidu.com');
+		$('#iframe2').load('https://www.sohu.com');
+		$('#iframe3').load('https://segmentfault.com');
+		$('#iframe4').load('https://www.zhihu.com');
+
+	},5000);
+</script>
+</html>
